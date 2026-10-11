@@ -220,6 +220,9 @@
       v.autoplay = true;
       v.playsInline = true;
       v.loop = true;
+      v.muted = true;          // без звука
+      v.defaultMuted = true;
+      v.volume = 0;
 
       f.innerHTML = '';
       f.appendChild(v);

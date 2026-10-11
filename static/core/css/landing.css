@@ -315,12 +315,12 @@ body {
 .chip em { font-size: 13px; font-style: normal; color: var(--faint); }
 
 /* ----------------------------- VIDEOS ---------------------------- */
-.videos { display: grid; grid-template-columns: 1.55fr 1fr; gap: 20px; }
+.videos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .video { display: flex; flex-direction: column; }
-.video--lead { grid-row: span 2; }
 .video-frame {
   position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius);
   background: linear-gradient(150deg, #171a20 0%, #0b0d10 60%, #1a1e26 100%);
+  background-size: cover; background-position: center;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; overflow: hidden;
   transition: transform .25s ease, box-shadow .25s ease;
@@ -392,7 +392,6 @@ body {
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero-logo { min-height: 240px; order: 2; }
   .videos { grid-template-columns: 1fr; }
-  .video--lead { grid-row: auto; }
   .contacts { grid-template-columns: 1fr; }
   .caps { grid-template-columns: 1fr; }
 }
