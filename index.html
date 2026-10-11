@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django, Docker · Магадан</title>
+  <meta name="description" content="Разработка интернет-магазинов и автоматизация на Django. Магадан.">
+  <link rel="stylesheet" href="static/core/css/landing.css">
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="hero-city reveal">Магадан</p>
+      <h1 class="reveal">Сайты для продаж<br>и автоматизация на&nbsp;Django</h1>
+      <p class="lead reveal">
+        Делаю интернет-магазины и избавляю от ручной работы, которая тянет время и деньги.
+      </p>
+      <div class="cta reveal">
+        <a class="btn btn-primary" href="#contact">Написать</a>
+        <a class="btn btn-ghost" href="#store">Смотреть магазин</a>
+      </div>
+    </div>
+
+    <!-- Лого Django: спокойные объёмные буквы Dj -->
+    <div class="hero-logo" id="heroLogo" aria-hidden="true">
+      <span class="dg">Dj</span>
+    </div>
+  </div>
+</header>
+
+<!-- Бегущая строка: аура без пафоса -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Django</span><i></i><span>Docker</span><i></i><span>интернет-магазины</span><i></i><span>автоматизация</span><i></i><span>Python</span><i></i><span>PostgreSQL</span><i></i><span>Nginx</span><i></i>
+    <span>Django</span><i></i><span>Docker</span><i></i><span>интернет-магазины</span><i></i><span>автоматизация</span><i></i><span>Python</span><i></i><span>PostgreSQL</span><i></i><span>Nginx</span><i></i>
+  </div>
+</div>
+
+<section class="section" id="store">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Магазин</h2>
+      <p class="section-sub">Пробная версия магазина, разработанного мной. Подстроюсь под любые потребности бизнеса.</p>
+    </div>
+
+    <div class="browser reveal">
+      <div class="browser-bar">
+        <span class="browser-dots"><i></i><i></i><i></i></span>
+        <span class="browser-url">stolichny.ru</span>
+        <a class="browser-open" href="demo/index.html"
+           >открыть ↗</a>
+      </div>
+      <div class="browser-body">
+        <a class="browser-shot" href="demo/index.html"
+           >
+          <span class="browser-shot-hint">открыть магазин</span>
+        </a>
+      </div>
+      <div class="browser-strip">
+        <span>каталог</span><i></i><span>корзина</span><i></i><span>заказ</span><i></i><span>оплата</span><i></i><span>админка</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="inside">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Что работает в магазине</h2>
+    </div>
+
+    <div class="caps">
+      
+        <div class="cap reveal" style="--c: #0C4B33; --cbg: #eaf3ee;">
+          <h3>Покупателю</h3>
+          <ul>
+            <li>Товары листаются без остановки — не надо искать по страницам</li><li>Нужный товар находится сразу, ещё при наборе названия</li><li>Корзина и заказ без перезагрузок — меньше поводов уйти</li><li>Скидки начисляются сами: на доставку, корзину, товар</li><li>Доставка по районам Магадана считается автоматически</li>
+          </ul>
+        </div>
+      
+        <div class="cap reveal" style="--c: #6E56CF; --cbg: #efecfb;">
+          <h3>Владельцу</h3>
+          <ul>
+            <li>Новый заказ вы услышите сразу, а не увидите вечером</li><li>Видно, кто и что менял в заказе — без путаницы</li><li>Выручка, средний чек и топ товаров — на одном экране</li><li>Товары и заказы меняются без программиста</li><li>Продавец видит только то, что ему нужно</li>
+          </ul>
+        </div>
+      
+        <div class="cap reveal" style="--c: #2496ED; --cbg: #e9f3fd;">
+          <h3>Развитие</h3>
+          <ul>
+            <li>Свой сайт, а не аренда конструктора с абоненткой</li><li>Новую функцию можно добавить в любой момент</li><li>Оплата, доставка и аналитика подключаются по мере надобности</li><li>Данные и заказы остаются у вас, а не у платформы</li>
+          </ul>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section" id="stack">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Что делаю</h2>
+    </div>
+
+    <div class="services">
+      
+        <article class="service reveal" style="--c: #0C4B33; --cbg: #eaf3ee;">
+          <h3>Интернет-магазин</h3>
+          <p>Сайт, через который продаёте: каталог, корзина, заказы, оплата, своя админка для товаров.</p>
+        </article>
+      
+        <article class="service reveal" style="--c: #6E56CF; --cbg: #efecfb;">
+          <h3>Автоматизация</h3>
+          <p>Убираю ручную работу, которая тратит время и деньги: заявки, таблицы, отчёты, обмен данными между сервисами.</p>
+        </article>
+      
+    </div>
+
+    <div class="stack-row reveal">
+      
+        <span class="chip" style="--c: #0C4B33; --cbg: #eaf3ee;">
+          <b>Django</b><em>бэкенд и база</em>
+        </span>
+      
+        <span class="chip" style="--c: #2496ED; --cbg: #e9f3fd;">
+          <b>Docker</b><em>запуск и перенос</em>
+        </span>
+      
+        <span class="chip" style="--c: #009639; --cbg: #e7f4ec;">
+          <b>Nginx</b><em>сервер и домен</em>
+        </span>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section" id="videos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Видео</h2>
+    </div>
+
+    <div class="videos">
+      
+        <figure class="video video--lead reveal" data-slot="video-main">
+          <div class="video-frame">
+            <span class="video-play" aria-hidden="true"></span>
+            <span class="video-hint">video-main</span>
+          </div>
+          <figcaption>
+            <span class="video-title">Магазин: витрина и заказ</span>
+            <span class="video-note">45–60 сек</span>
+          </figcaption>
+        </figure>
+      
+        <figure class="video  reveal" data-slot="video-admin">
+          <div class="video-frame">
+            <span class="video-play" aria-hidden="true"></span>
+            <span class="video-hint">video-admin</span>
+          </div>
+          <figcaption>
+            <span class="video-title">Админка магазина</span>
+            <span class="video-note">1–2 мин</span>
+          </figcaption>
+        </figure>
+      
+        <figure class="video  reveal" data-slot="video-run">
+          <div class="video-frame">
+            <span class="video-play" aria-hidden="true"></span>
+            <span class="video-hint">video-run</span>
+          </div>
+          <figcaption>
+            <span class="video-title">Как это запускается</span>
+            <span class="video-note">1–2 мин</span>
+          </figcaption>
+        </figure>
+      
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Контакты</h2>
+    </div>
+    <div class="contacts">
+      
+        <a class="contact reveal" href="https://t.me/tat_roman" target="_blank" rel="noopener">
+          <span class="contact-label">Telegram</span>
+          <span class="contact-value">@tat_roman</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+      
+    </div>
+  </div>
+</section>
+
+<footer class="footer footer--dark">
+  <div class="wrap">
+    <span>Магадан</span>
+  </div>
+</footer>
+
+<script src="static/core/js/landing.js"></script>
+</body>
+</html>
