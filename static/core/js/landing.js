@@ -191,13 +191,39 @@
 })();
 
 /* =====================================================================
-   ЗАГЛУШКИ ВИДЕО: мягкий отклик на клик
+   ВИДЕО: если файл добавлен — играем на месте.
+   Пока файла нет — мягкий отклик на клик (заглушка).
    ===================================================================== */
 (function () {
   document.querySelectorAll('.video-frame').forEach(function (f) {
-    f.addEventListener('click', function () {
-      f.classList.add('pulse');
-      setTimeout(function () { f.classList.remove('pulse'); }, 450);
+    var src = f.dataset.src;
+
+    if (!src) {
+      // Заглушка: файл ещё не добавлен
+      f.addEventListener('click', function () {
+        f.classList.add('pulse');
+        setTimeout(function () { f.classList.remove('pulse'); }, 450);
+      });
+      return;
+    }
+
+    // Есть файл — по клику подменяем блок на <video>
+    f.addEventListener('click', function onClick() {
+      f.removeEventListener('click', onClick);
+      f.classList.remove('pulse');
+      f.style.cursor = 'default';
+
+      var v = document.createElement('video');
+      v.src = src;
+      if (f.dataset.poster) v.poster = f.dataset.poster;
+      v.controls = true;
+      v.autoplay = true;
+      v.playsInline = true;
+      v.loop = true;
+
+      f.innerHTML = '';
+      f.appendChild(v);
+      v.play().catch(function () { /* автоплей может быть заблокирован — не беда, есть controls */ });
     });
   });
 })();

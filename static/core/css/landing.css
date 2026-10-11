@@ -327,6 +327,8 @@ body {
 }
 .video-frame:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .video-frame.pulse { animation: pulse .45s ease; }
+.video-frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-frame--empty { cursor: default; }
 @keyframes pulse { 50% { transform: scale(.985); } }
 .video-play {
   width: 62px; height: 62px; border-radius: 50%;
